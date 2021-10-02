@@ -1,0 +1,25 @@
+---
+layout: page
+---
+<div class="gallery-post-container">
+  <div class="artwork-img">
+    <img src="{{page.image_path}}" alt="{{page.name}}">
+  </div>
+
+  <div class="artwork-description">
+    <div class="artwork-description-header">
+      <div class="artwork-description-title">
+        {{page.name}}
+      </div>
+      <div class="info-text">{{page.date | date: "%d %b %Y"}}
+        <span>&nbsp;</span>
+        {{page.author}}
+      </div>
+    </div>
+
+    <div class="artwork-description-content">
+        {{content}}
+    </div>
+  </div>
+
+</div>

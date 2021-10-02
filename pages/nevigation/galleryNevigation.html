@@ -1,0 +1,22 @@
+---
+layout: "page"
+permalink: /gallery/
+title: Gallery
+---
+
+<body>
+  <div class="gallery-container">
+  {%- for artwork in site.artworks -%}
+
+    <div class="gallery-item">
+      <a href="{{artwork.url}}">
+        <img src="{{artwork.image_path}}" alt="{{artwork.name}}">
+      </a>
+      <p class="info-text">{{artwork.name}}<span>&nbsp;</span>
+        {{artwork.date | date: "%b %Y"}}</p>
+    </div>
+
+  {%- endfor -%}
+
+  </div>
+</body>

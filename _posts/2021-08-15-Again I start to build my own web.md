@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Again I start to build my own web"
+---
+It is like after many times of struggling that I make up my mind to build my web again.
+
+Believe you can do it!

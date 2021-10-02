@@ -1,0 +1,43 @@
+.gallery-post-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 35px;
+}
+
+.artwork-img img{
+  max-width: 40vw;
+}
+
+.artwork-description {
+  max-width: 35vw;
+}
+
+.artwork-description-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap:20px;
+  margin-bottom: 25px;
+}
+
+.artwork-description-title {
+  font-size: 32px;
+}
+
+.artwork-description-header .info-text {
+  font-size: 15px;
+  margin-top: 5px;
+  padding-bottom: 3px;
+  align-self: flex-end;
+}
+
+.artwork-description-content {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.artwork-description-content p {
+  padding: 3px 0;
+}

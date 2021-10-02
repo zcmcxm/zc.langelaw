@@ -1,0 +1,13 @@
+---
+layout: "wrapper"
+---
+
+<h1 class="page-title">
+  {%- if page.home != true  and page.gallery != true -%}
+    {{page.title}}
+  {%- endif -%}
+</h1>
+
+<div class="in-page-content">
+  {{content}}
+</div>

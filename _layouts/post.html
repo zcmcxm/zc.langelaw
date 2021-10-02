@@ -1,0 +1,17 @@
+---
+layout: "wrapper"
+---
+<div class="post">
+
+  <h1 class="post-title">{{page.title}}</h1>
+
+  <div class="info-text">
+    <span class="info-text">{{page.author}}</span>
+    <span>&nbsp;</span>
+    <span class="info-text"> {{page.date | date: "%d %b %Y"}}</span>
+  </div>
+  <div class="post-content">
+    {{content}}
+  </div>
+
+</div>

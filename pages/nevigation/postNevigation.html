@@ -1,0 +1,21 @@
+---
+layout: "page"
+permalink: /post/
+title: Post
+---
+<body>
+  {%- for post in site.posts -%}
+  <div class="menu">
+    <div class="info-text">
+      {{post.date | date: "%d %b %Y"}}
+    </div>
+
+    <div class="post-nev-title">
+      <a href="{{post.url}}">{{post.title}}</a>
+    </div>
+
+    <br>
+  </div>
+  {%- endfor -%}
+
+</body>
