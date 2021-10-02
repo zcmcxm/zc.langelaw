@@ -6,13 +6,6 @@
    max-width: 50vw;
  }
 
-@media screen and (max-width: 767px) {
-   .site-logo {
-      margin-left: 0;
-      margin-right: 0;
-   }
-}
-
 .site-logo {
   max-width: 60vw;
   max-height: 200px;
@@ -20,6 +13,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+   .site-logo {
+      margin-left: 0;
+      margin-right: 0;
+   }
 }
 
 .description{
