@@ -3,7 +3,7 @@ layout: page
 ---
 <div class="gallery-post-container">
   <div class="artwork-img">
-    <img src="{{page.image_path}}" alt="{{page.name}}">
+    <img src="{{ 'page.image_path' | relative_url }}" alt="{{page.name}}">
   </div>
 
   <div class="artwork-description">
