@@ -6,6 +6,12 @@
   column-gap: 35px;
 }
 
+@media screen and (max-width: 767px) {
+  .gallery-post-container {
+    flex-direction: column;
+  }
+}
+
 .artwork-img img{
   max-width: 40vw;
 }
