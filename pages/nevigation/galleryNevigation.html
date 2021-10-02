@@ -9,8 +9,8 @@ title: Gallery
   {%- for artwork in site.artworks -%}
 
     <div class="gallery-item">
-      <a href="{{artwork.url}}">
-        <img src="{{artwork.image_path}}" alt="{{artwork.name}}">
+      <a href="{{ site.baseurl }}{{artwork.url}}">
+        <img src="{{ site.baseurl }}{{artwork.image_path}}" alt="{{artwork.name}}">
       </a>
       <p class="info-text">{{artwork.name}}<span>&nbsp;</span>
         {{artwork.date | date: "%b %Y"}}</p>
