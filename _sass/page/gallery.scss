@@ -6,6 +6,14 @@
   column-gap: 35px;
 }
 
+.artwork-img img{
+  max-width: 40vw;
+}
+
+.artwork-description {
+  max-width: 35vw;
+}
+
 @media screen and (max-width: 767px) {
   .gallery-post-container {
     flex-direction: column;
@@ -16,14 +24,6 @@
   .artwork-img img{
     max-width: 80vw;
   }
-}
-
-.artwork-img img{
-  max-width: 40vw;
-}
-
-.artwork-description {
-  max-width: 35vw;
 }
 
 .artwork-description-header {
