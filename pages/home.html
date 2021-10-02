@@ -15,7 +15,7 @@ home: true
 
     <div class="home-in-page-content">
 
-      <img src="{{ 'assets/site-logo.png' | relative_url }}" alt="site-logo" class="site-logo">
+      <img src="{{ site.baseurl }}/assets/site-logo.png" alt="site-logo" class="site-logo">
 
       <br>
 
@@ -23,9 +23,9 @@ home: true
 
       <div class="home-nev">
         <ul>
-          <li><a href="{{ '/post/' | relative_url }}">Post</a></li>
-          <li><a href="{{ '/gallery/' | relative_url }}">Gallery</a></li>
-          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          <li><a href="{{ site.baseurl }}/post/">Post</a></li>
+          <li><a href="{{ site.baseurl }}/gallery/">Gallery</a></li>
+          <li><a href="{{ site.baseurl }}/about/">About</a></li>
         </ul>
       </div>
     </div>
