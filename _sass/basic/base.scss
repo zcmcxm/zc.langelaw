@@ -1,14 +1,12 @@
-:root {
-  //--main-color-1: #C85250;
-  $main-color-1: #C85250;
-  //--main-color-2: black;
-  $main-color-2: black;
-  //--main-opacity: 50%;
-  $main-opacity: 50%;
-  //--vh: expression(window.innerHeight / 100);
-  $sans-serif: 'Josefin Sans', Arial, sans-serif;
-  $serif: 'Josefin Slab', serif;
-}
+//--main-color-1: #C85250;
+$main-color-1: #C85250;
+//--main-color-2: black;
+$main-color-2: black;
+//--main-opacity: 50%;
+$main-opacity: 50%;
+//--vh: expression(window.innerHeight / 100);
+$sans-serif: 'Josefin Sans', Arial, sans-serif;
+$serif: 'Josefin Slab', serif;
 
 body{
   overflow-y: auto;
