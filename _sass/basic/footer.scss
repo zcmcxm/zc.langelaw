@@ -7,7 +7,7 @@
   font-size: 15px;
   padding-left: 20px;
   font-family: 'Josefin Slab', serif;
-  color: var(--main-color-1);
+  color: $main-color-1;
 }
 
 .social-icons-container {
@@ -40,11 +40,11 @@
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  color: var(--main-color-1);
+  color: $main-color-1;
 }
 
 .fa:hover {
-  opacity: var(--main-opacity);
+  opacity: $main-opacity;
 }
 
 .row{
