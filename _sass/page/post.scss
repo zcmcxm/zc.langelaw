@@ -4,14 +4,14 @@
   margin-right: auto;
 }
 .post-title {
-  color: var(--main-color-2);
+  color: $main-color-2;
   font-size: 32px;
   text-align: left;
 }
 
 .post-content {
   margin-top: 30px;
-  color: var(--main-color-2);
+  color: $main-color-2;
   font-size: 20px;
 
 }
