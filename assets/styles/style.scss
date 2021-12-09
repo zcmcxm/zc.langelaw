@@ -1,0 +1,142 @@
+$main-color-1: #222;
+$main-color-2: #fff;
+$main-opacity: 70%; //opacity for hovering nev and date
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  padding: 3rem;
+  background: linear-gradient(
+    to right,
+    rgba(18, 107, 174, 0.7) 20%,
+    rgba(65, 174, 60, 0.7) 20% 40%,
+    rgba(254, 209, 16, 0.7) 40% 60%,
+    rgba(249, 125, 28, 0.7) 60% 80%,
+    rgba(237, 72, 69, 0.7) 80%
+  );
+  text-align: center;
+}
+
+header {
+  padding: 30px;
+  width: auto;
+  font-size: 40px;
+  color: $main-color-1;
+}
+
+form {
+  padding-bottom: 1rem;
+
+  input {
+    outline-style: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 14px 14px;
+    width: 620px;
+    font-size: 16px;
+  }
+
+  input:focus {
+    border-color: $main-color-1;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+      0 0 8px rgba(102, 175, 233, 0.6);
+  }
+}
+
+button {
+  border: none;
+  background-color: $main-color-1;
+  color: $main-color-2;
+  padding: 14px 14px;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: $main-color-1;
+  opacity: $main-opacity;
+  color: $main-color-2;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  div.todo-element {
+    background-color: $main-color-1;
+    color: $main-color-2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40vw;
+    margin: 0.3rem;
+    transition: 0.3s;
+
+    .todo-text {
+      display: inline-block;
+      width: 80%;
+      text-align: center;
+    }
+
+    .check {
+      display: inline-block;
+      width: 10%;
+    }
+
+    .trash {
+      display: inline-block;
+      width: 10%;
+    }
+  }
+
+  div.done {
+    opacity: $main-opacity;
+    text-decoration: line-through;
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+}
+
+@keyframes emerge {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
