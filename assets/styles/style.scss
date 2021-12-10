@@ -61,15 +61,6 @@ form {
   }
 }
 
-@media screen and (max-width: 850px) {
-  form {
-    input {
-      width: 75vw;
-      margin-bottom: 0.8rem;
-    }
-  }
-}
-
 button {
   border: none;
   background-color: $main-color-1;
@@ -145,6 +136,18 @@ footer {
   margin: 1rem 0;
   opacity: $main-opacity;
   font-size: 12px;
+}
+
+@media screen and (max-width: 850px) {
+  form {
+    input {
+      width: 75vw;
+      margin-bottom: 0.8rem;
+    }
+  }
+  section div.todo-element {
+    width: 75vw;
+  }
 }
 
 @keyframes emerge {
