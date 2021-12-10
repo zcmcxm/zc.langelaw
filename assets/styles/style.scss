@@ -64,7 +64,8 @@ form {
 @media screen and (max-width: 850px) {
   form {
     input {
-      width: 50vw;
+      width: 75vw;
+      margin-bottom: 0.8rem;
     }
   }
 }
@@ -138,11 +139,10 @@ section {
 
 footer {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 0;
   opacity: $main-opacity;
   font-size: 12px;
 }
