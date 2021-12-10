@@ -16,7 +16,7 @@ i {
 }
 
 body {
-  padding: 3rem;
+  padding: 3rem 0;
   background: linear-gradient(
     to right,
     rgba(18, 107, 174, 0.7) 20%,
@@ -114,18 +114,19 @@ section {
 
     .todo-text {
       display: inline-block;
-      width: 80%;
+      width: 75%;
       text-align: center;
     }
 
     .check {
       display: inline-block;
-      width: 10%;
+      width: 12%;
     }
 
     .trash {
       display: inline-block;
-      width: 10%;
+      width: 13%;
+      margin-right: 0.8rem;
     }
   }
 

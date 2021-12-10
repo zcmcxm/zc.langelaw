@@ -11,7 +11,7 @@ i {
 }
 
 body {
-  padding: 3rem;
+  padding: 3rem 0;
   background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(18, 107, 174, 0.7)), color-stop(20%, rgba(65, 174, 60, 0.7)), color-stop(40%, rgba(254, 209, 16, 0.7)), color-stop(60%, rgba(249, 125, 28, 0.7)), color-stop(80%, rgba(237, 72, 69, 0.7)));
   background: linear-gradient(to right, rgba(18, 107, 174, 0.7) 20%, rgba(65, 174, 60, 0.7) 20% 40%, rgba(254, 209, 16, 0.7) 40% 60%, rgba(249, 125, 28, 0.7) 60% 80%, rgba(237, 72, 69, 0.7) 80%);
   text-align: center;
@@ -125,18 +125,19 @@ section div.todo-element {
 
 section div.todo-element .todo-text {
   display: inline-block;
-  width: 80%;
+  width: 75%;
   text-align: center;
 }
 
 section div.todo-element .check {
   display: inline-block;
-  width: 10%;
+  width: 12%;
 }
 
 section div.todo-element .trash {
   display: inline-block;
-  width: 10%;
+  width: 13%;
+  margin-right: 0.8rem;
 }
 
 section div.done {
