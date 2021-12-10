@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,8 +12,24 @@ i {
 
 body {
   padding: 3rem;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(18, 107, 174, 0.7)), color-stop(20%, rgba(65, 174, 60, 0.7)), color-stop(40%, rgba(254, 209, 16, 0.7)), color-stop(60%, rgba(249, 125, 28, 0.7)), color-stop(80%, rgba(237, 72, 69, 0.7)));
-  background: linear-gradient(to right, rgba(18, 107, 174, 0.7) 20%, rgba(65, 174, 60, 0.7) 20% 40%, rgba(254, 209, 16, 0.7) 40% 60%, rgba(249, 125, 28, 0.7) 60% 80%, rgba(237, 72, 69, 0.7) 80%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(20%, rgba(18, 107, 174, 0.7)),
+    color-stop(20%, rgba(65, 174, 60, 0.7)),
+    color-stop(40%, rgba(254, 209, 16, 0.7)),
+    color-stop(60%, rgba(249, 125, 28, 0.7)),
+    color-stop(80%, rgba(237, 72, 69, 0.7))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(18, 107, 174, 0.7) 20%,
+    rgba(65, 174, 60, 0.7) 20% 40%,
+    rgba(254, 209, 16, 0.7) 40% 60%,
+    rgba(249, 125, 28, 0.7) 60% 80%,
+    rgba(237, 72, 69, 0.7) 80%
+  );
   text-align: center;
 }
 
@@ -22,6 +38,18 @@ header {
   width: auto;
   font-size: 40px;
   color: #222;
+}
+
+container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 form {
@@ -40,8 +68,16 @@ form input {
 form input:focus {
   border-color: #222;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  form input {
+    width: 40vw;
+  }
 }
 
 button {
@@ -67,17 +103,21 @@ button:hover {
   color: #fff;
 }
 
+div.to-do-list {
+  margin: 2rem, 0;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -89,11 +129,11 @@ section div.todo-element {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 40vw;
   margin: 0.3rem;
   -webkit-transition: 0.3s;
@@ -133,44 +173,44 @@ footer {
 @-webkit-keyframes emerge {
   from {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes emerge {
   from {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @-webkit-keyframes disappear {
   from {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   to {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
 
 @keyframes disappear {
   from {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   to {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
 /*# sourceMappingURL=style.css.map */

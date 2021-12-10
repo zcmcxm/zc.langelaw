@@ -1,0 +1,77 @@
+.gallery-post-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
+}
+
+.artwork-img img {
+  max-width: 40vw;
+}
+
+.artwork-description {
+  max-width: 35vw;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-post-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .artwork-description {
+    max-width: 80vw;
+  }
+  .artwork-img img {
+    max-width: 80vw;
+  }
+}
+
+.artwork-description-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin-bottom: 25px;
+}
+
+.artwork-description-title {
+  font-size: 32px;
+}
+
+.artwork-description-header .info-text {
+  font-size: 15px;
+  margin-top: 5px;
+  padding-bottom: 3px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.artwork-description-content {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.artwork-description-content p {
+  padding: 3px 0;
+}
+/*# sourceMappingURL=gallery.css.map */
