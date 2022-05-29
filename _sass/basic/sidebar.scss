@@ -1,0 +1,65 @@
+@import '../variables';
+
+.sidebar {
+    z-index: 7;
+    .sidebar-icon {
+        color: $main-color-2;
+        position: fixed;
+        font-size: 2rem;
+        top: 1rem;
+        right: 2rem;
+    }
+
+    .sidebar-icon:hover {
+        opacity: $main-opacity;
+    }
+
+    .sidebar-content {
+        position: absolute;
+        left: -30vw;
+        width: 30vw;
+        height: 100vh;
+        background-color: $main-color-1;
+        color: $main-color-2;
+        font-size: 2rem;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+
+        .right {
+            text-align: right;
+            margin: 1rem 1rem 0 0;
+        }
+        a {
+            margin: 0.5rem 0 0.5rem 2rem;
+            color: $main-color-2;
+        }
+        
+    }
+
+    .sidebar-active {
+        left: 0;
+    }
+
+    @media screen and (max-width: 576px) {
+        .sidebar-icon {
+            font-size: 1.8rem;
+        }
+
+        .sidebar-content {
+            font-size: 1.4rem;
+            left: 0;
+            top: -32vh;
+            height: 32vh;
+            width: 100vw;
+            i {
+                font-size: 1.8rem;
+            }
+        }
+
+        .sidebar-active {
+            top: 0;
+        }
+    }
+}

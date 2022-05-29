@@ -9,21 +9,25 @@
   <title>ZC | {{page.title}}</title>
 </head>
 <body>
+
+  {% include sidebar.html %}
   
-    <header>
-      {%- if page.home != true -%}
-        {%- include header.html -%}
-      {%- endif -%}
-    </header>
+  {% if page.home %}
 
     <div class="main">
       {{content}}
     </div>
 
-    <footer>
-      {%- include footer.html -%}
-    </footer>
+  {% else %}
 
+    {% include header.html %}
+    <div class="main with-header">
+      {{content}}
+    </div>
+
+  {% endif %}
+
+  {% include footer.html %}
 
 </body>
 </html>

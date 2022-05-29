@@ -1,0 +1,31 @@
+.post {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-title {
+  color: black;
+  font-size: 32px;
+  text-align: left;
+}
+
+.post-content {
+  margin-top: 30px;
+  color: black;
+  font-size: 20px;
+}
+
+.info-text {
+  text-align: left;
+  opacity: 0.5;
+}
+
+.signature {
+  text-align: right;
+}
+
+.signature .name {
+  padding-right: 80px;
+}
+/*# sourceMappingURL=post.css.map */

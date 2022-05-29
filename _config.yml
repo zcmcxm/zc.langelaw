@@ -26,10 +26,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
 
-baseurl: "/zc.langelaw/" # the subpath of your site, e.g. /blog
+baseurl: "/zc.langelaw" # the subpath of your site, e.g. /blog
 url: "https://zc.langelaw" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  zcmcxm
+# twitter_username: jekyllrb
+github_username: zcmcxm
 
 # Build settings
 theme: minima
@@ -37,19 +37,17 @@ plugins:
   - jekyll-feed
 
 sass:
-    style: compressed
+  style: compressed
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "default"
       author: "Zhang Chi"
 
-  -
-    scope:
+  - scope:
       path: ""
       type: "artworks"
     values:
@@ -60,13 +58,16 @@ defaults:
 collections:
   artworks:
     output: true
-    
+
 gems:
   - jekyll-relative-links
 
 relative_links:
   enabled: true
   collections: true
+
+# personalise url for posts
+permalink: /:month-:day-:year/:title
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -1,0 +1,16 @@
+<div class="sidebar">
+    <div class="sidebar-icon">
+        <i class="fa fa-bars" onclick="openNav()"></i>
+    </div>
+
+    <div class="sidebar-content">
+        <i class="fa fa-times right" onclick="closeNav()"></i>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/post/' | relative_url }}">Post</a>
+        <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
+        <a href="{{ '/#about' | relative_url }}">About</a>
+    </div>
+    
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/sidebar.js"></script>

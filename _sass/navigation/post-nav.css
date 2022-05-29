@@ -1,0 +1,50 @@
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu .post-nav {
+  margin-bottom: 2rem;
+}
+
+.menu .post-nav .info-text {
+  margin-bottom: 0.4rem;
+}
+
+.menu .post-nav .post-nav-title {
+  font-size: 1.5rem;
+}
+
+.menu .post-nav .post-abstract {
+  max-width: 50rem;
+  margin-top: 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "PT Serif", serif;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.menu .post-nav .post-abstract br {
+  display: none;
+}
+
+.menu .post-nav .post-abstract span {
+  display: none;
+}
+
+.menu .post-nav .post-abstract .signature {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .menu .post-nav .menu .info-text {
+    margin-bottom: 0.9rem;
+  }
+  .menu .post-nav .post-nav-title {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=post-nav.css.map */

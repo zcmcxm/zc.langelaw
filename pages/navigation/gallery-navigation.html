@@ -1,5 +1,5 @@
 ---
-layout: "page"
+layout: page
 permalink: /gallery/
 title: Gallery
 ---
@@ -12,8 +12,14 @@ title: Gallery
       <a href="{{ site.baseurl }}{{artwork.url}}">
         <img src="{{ site.baseurl }}{{artwork.image_path}}" alt="{{artwork.name}}">
       </a>
-      <p class="info-text">{{artwork.name}}<span>&nbsp;</span>
-        {{artwork.date | date: "%b %Y"}}</p>
+
+      <a href="{{ site.baseurl }}{{artwork.url}}">
+        <p class="info-text">{{artwork.name}}<span>&nbsp;</span>
+          {{artwork.date | date: "%b %Y"}}</p>
+          
+        <p class="abstract">{{artwork.abstract}}</p>
+      </a>
+      
     </div>
 
   {%- endfor -%}

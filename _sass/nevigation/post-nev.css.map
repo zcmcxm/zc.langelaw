@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACE,AAAA,KAAK,CAAC,UAAU,CAAC;EACf,aAAa,EAAE,IAAI;CACpB;;AAED,AAAA,eAAe,CAAC;EACd,SAAS,EAAE,IAAI;CAChB",
-    "sources": [
-        "post-nev.scss"
-    ],
-    "names": [],
-    "file": "post-nev.css"
-}

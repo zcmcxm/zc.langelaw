@@ -1,79 +1,95 @@
-body {
-  overflow-y: auto;
-  overflow-x: hidden;
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Josefin Sans", Arial, sans-serif;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto 1fr auto;
-      grid-template-rows: auto 1fr auto;
-  height: calc(100vh - 18px);
 }
 
-@media screen and (max-width: 767px) {
-  body {
-    height: calc(100vh - 19px);
-  }
+html, body {
+  height: 100%;
 }
 
-footer {
-  min-height: 70px;
-  margin-top: auto;
+body {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-header {
-  min-height: 40px;
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #c85250;
+}
+
+a:hover, a:active {
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .main {
   max-width: 80vw;
   min-width: 50vw;
-  margin:auto;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.with-header {
+  margin-top: 5rem;
 }
 
 .page-title {
   text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
 }
 
 .in-page-content {
-  margin: auto;
-  font-size: 20px;
-  padding-top: 10px;
-}
-
-.about-content {
-  max-width: 80%;
-  margin: auto;
+  margin: 0 0 4rem;
 }
 
 hr {
   display: block;
   margin: 0;
-  color: #C85250;
+  color: #c85250;
   height: 1px;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .info-text {
-  font-family: "Josefin Sans", Arial, sans-serif;
-  font-size: 15px;
-  color: #C85250;
-  opacity: 50%;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 1rem;
+  color: #c85250;
+  opacity: 0.5;
   font-style: italic;
 }
 
-a {
-  text-decoration: none;
-  color: #C85250;
+.opacified {
+  background-color: rgba(200, 82, 80, 0.5);
 }
 
-a:hover, a:active {
-  opacity: 50%;
-  text-decoration: underline;
+@media screen and (max-width: 576px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
 }
 /*# sourceMappingURL=base.css.map */

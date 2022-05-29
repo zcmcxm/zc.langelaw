@@ -1,0 +1,49 @@
+@import '../variables';
+
+.menu{
+  margin-left: auto;
+  margin-right: auto;
+  .post-nav{
+    margin-bottom: 2rem;
+    .info-text {
+      margin-bottom: 0.4rem;
+    }
+    
+    .post-nav-title {
+      font-size: 1.5rem;
+    }
+
+    .post-abstract {
+      max-width: 50rem;
+      margin-top: 0.4rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: $serif;
+      opacity: $main-opacity;
+      font-size: 0.9rem;
+      color: $main-color-2;
+      br {
+        display: none;
+      }
+
+      span {
+        display: none;
+      }
+
+      .signature {
+        display: none
+      }
+    }
+    
+    @media screen and (max-width: 576px) {
+      .menu .info-text {
+        margin-bottom: 0.9rem;
+      }
+    
+      .post-nav-title {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

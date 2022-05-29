@@ -1,0 +1,10 @@
+// $main-color-1: rgba(200, 82, 80, 1); //color for sub headline, category, and nav
+$main-color-1: rgb(200, 82, 80);
+$main-color-2: black; //color for main text
+$main-opacity: 0.5; //opacity for hovering nav and date
+$main-color-1-opacified: rgba(200, 82, 80, $main-opacity);
+//--vh: expression(window.innerHeight / 100);
+$sans-serif: Futura,Trebuchet MS,Arial,sans-serif; 
+// HelveticaNowText,Helvetica,Arial,sans-serif
+// 'Josefin Sans', Arial, sans-serif
+$serif: 'PT Serif', serif;

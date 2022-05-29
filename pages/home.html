@@ -1,34 +1,46 @@
 ---
 permalink: /
-layout: "page"
+layout: page
 title: Home
 home: true
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
+<div class="home-content">
+  <div class="home-header-content">
 
+    <img src="{{ site.baseurl }}/assets/site-logo.png" alt="site-logo" class="site-logo">
 
-    <div class="home-in-page-content">
+    <p class="description">Mutant and Proud.</p>
 
-      <img src="{{ site.baseurl }}/assets/site-logo.png" alt="site-logo" class="site-logo">
+    <div class="home-nav">
+      <ul>
+        <li><a href="{{ site.baseurl }}/post/">Post</a></li>
+        <li><a href="{{ site.baseurl }}/gallery/">Gallery</a></li>
+        <!-- <li><a href="{{ site.baseurl }}/about/">About</a></li> -->
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <div class="about-header">About</div>
+    <div class="about-content">
+      <p>Welcome to my site! Here is where I share my ideas, calligraphy, and exploration.
+        <a href="{{ site.baseurl }}/post/">Post</a> is where I share my life and thoughts.
+        In <a href="{{ site.baseurl }}/gallery/">Gallery</a>, I put my art work collection.</p>
 
       <br>
 
-      <p class="description">Mutant and Proud.</p>
+      <p>I'm Zhang Chi, a Year 2 Computer Science student at Nanyang Technological University, Singapore. I'm from Chongqing, China. I'm passionate about Chinese calligraphy and many kinds of sports, for example, scuba diving, taekwondo, and cycling. </p>
 
-      <div class="home-nev">
-        <ul>
-          <li><a href="{{ site.baseurl }}/post/">Post</a></li>
-          <li><a href="{{ site.baseurl }}/gallery/">Gallery</a></li>
-          <li><a href="{{ site.baseurl }}/about/">About</a></li>
-        </ul>
-      </div>
+      <br>
+
+      <p>If you have any suggestion on site building or design for me, please feel free to
+        <a href = "mailto: akamaru.zcmclc@gamil.com">contact me</a>.
+        Looking forward to your suggestions :)</p>
     </div>
 
-  </body>
-</html>
+  </div>
+
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/intro.js"></script>

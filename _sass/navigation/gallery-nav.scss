@@ -1,0 +1,70 @@
+@import '../variables';
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  align-items: center;
+  margin: 0 1rem 4rem;
+  min-width: 20vw;
+
+  a {
+    display: block;
+    // text-align: center;
+  }
+
+  a:hover, a:active {
+    opacity: $main-opacity;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 50vw;
+    max-height: 40vh;
+    box-shadow: 10px 10px 13px 0 rgba(0,0,0,.15);
+    transition: transform .5s;
+  }
+
+  img:hover {
+    transform: scale(1.03);
+  }
+
+  .info-text {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 1.8rem;
+    font-style: normal;
+    opacity: 1;
+  }
+
+  .abstract {
+    text-align: left;
+    color: $main-color-2;
+    opacity: $main-opacity;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    font-family: $serif;
+  }
+
+  @media screen and (max-width: 576px) {
+    img {
+      max-width: 70vw;
+      max-height: 40vh;
+    }
+
+    .info-text {
+      font-size: 0.9rem;
+    }
+  
+    .abstract {
+      font-size: 0.6rem;
+    }
+  }
+}
