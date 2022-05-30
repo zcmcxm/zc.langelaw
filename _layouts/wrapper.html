@@ -10,11 +10,12 @@
 </head>
 <body>
 
-  {% include sidebar.html %}
+  <!-- {% include sidebar.html %} -->
   
   {% if page.home %}
 
     <div class="main">
+      {% include sidebar.html %}
       {{content}}
     </div>
 
@@ -22,6 +23,7 @@
 
     {% include header.html %}
     <div class="main with-header">
+      {% include sidebar.html %}
       {{content}}
     </div>
 
